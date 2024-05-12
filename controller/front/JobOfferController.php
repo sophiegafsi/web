@@ -10,6 +10,7 @@ class JobOfferController
         require(_PROJECT_DIR_.'/view/job_offer/list.php');
     }
     public function view()
+    
     {
         $job_offer = new JobOffer();
         $job_offer = $job_offer->view($_GET['id']);
